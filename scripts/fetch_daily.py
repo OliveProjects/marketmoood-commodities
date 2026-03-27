@@ -76,7 +76,7 @@ def main():
 
     save("data/commodities-history.json", {
         "fetched_at": int(time.time() * 1000),
-        "assets": assets,
+        "indices": assets,
     })
     print("=== Done ===")
 
