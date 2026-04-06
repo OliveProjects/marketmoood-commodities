@@ -23,9 +23,16 @@ SYMBOLS = {
     "Gold":        "GC%3DF",
     "Silver":      "SI%3DF",
     "Copper":      "HG%3DF",
+    "Aluminum":    "ALI%3DF",
+    "Platinum":    "PL%3DF",
+    "Palladium":   "PA%3DF",
     "WTI Oil":     "CL%3DF",
     "Brent Crude": "BZ%3DF",
     "Natural Gas": "NG%3DF",
+    "Wheat":       "ZW%3DF",
+    "Corn":        "ZC%3DF",
+    "Coffee":      "KC%3DF",
+    "Sugar":       "SB%3DF",
 }
 
 
