@@ -81,6 +81,10 @@ def main():
             print(f"    ERROR {name}: {e}")
         time.sleep(0.4)
 
+    if len(assets) < 8:
+        print(f"  Only {len(assets)} commodities fetched (expected 13) — skipping save to preserve existing data.")
+        return
+
     save("data/commodities-history.json", {
         "fetched_at": int(time.time() * 1000),
         "indices": assets,
