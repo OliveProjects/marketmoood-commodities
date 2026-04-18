@@ -29,10 +29,16 @@ SYMBOLS = {
     "WTI Oil":     "CL%3DF",
     "Brent Crude": "BZ%3DF",
     "Natural Gas": "NG%3DF",
-    "Wheat":       "ZW%3DF",
-    "Corn":        "ZC%3DF",
-    "Coffee":      "KC%3DF",
-    "Sugar":       "SB%3DF",
+    "RBOB Gasoline": "RB%3DF",
+    "Heating Oil":   "HO%3DF",
+    "Wheat":         "ZW%3DF",
+    "Corn":          "ZC%3DF",
+    "Soybeans":      "ZS%3DF",
+    "Oats":          "ZO%3DF",
+    "Coffee":        "KC%3DF",
+    "Sugar":         "SB%3DF",
+    "Cocoa":         "CC%3DF",
+    "Orange Juice":  "OJ%3DF",
 }
 
 
@@ -81,8 +87,8 @@ def main():
             print(f"    ERROR {name}: {e}")
         time.sleep(0.4)
 
-    if len(assets) < 8:
-        print(f"  Only {len(assets)} commodities fetched (expected 13) — skipping save to preserve existing data.")
+    if len(assets) < 12:
+        print(f"  Only {len(assets)} commodities fetched (expected 19) — skipping save to preserve existing data.")
         return
 
     save("data/commodities-history.json", {
